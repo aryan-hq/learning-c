@@ -1,2 +1,0 @@
-# About This Repository 
-### This repository contains the coding problems and exercises I have completed while learning the C programming language from scratch. It serves as a personal log of my progress, a space to practice version control with Git, and a reference for core programming concepts.
