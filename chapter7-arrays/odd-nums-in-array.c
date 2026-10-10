@@ -4,8 +4,8 @@ int oddnum(int num[], int n);
 
 int main() {
     
-    int num[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-    printf("Total number of odd integers : %d", oddnum(num, 11));
+    int num[] = {10, 23, 24, 25, 45, 3, 4, 6, 7, 8, 9};
+    printf("Total number of odd integers : %d", oddnum(num, 10));
     return 0;
 }
 
