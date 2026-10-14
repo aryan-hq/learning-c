@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-int fibonacci(int n);
+int calc_fib(int n);
 
 int main() {
     int n;
-    printf("Enter number : ");
+    printf("Enter number of terms : ");
     scanf("%d", &n);
     
-    printf("Fibonacci %dth term is : %d\n", n, fibonacci(n));
+    printf("Fibonacci of %d terms : %d\n", n, calc_fib(n));
 
     return 0;
 }
 
-int fibonacci(int n) {
+int calc_fib(int n) {
         if (n == 0 ) {
             return 0;
         }
@@ -20,6 +20,6 @@ int fibonacci(int n) {
             return 1;
         }
     
-    int fib = fibonacci(n - 1) + fibonacci(n - 2);
+    int fib = calc_fib(n - 1) + calc_fib(n - 2);
     return fib;
 } 
