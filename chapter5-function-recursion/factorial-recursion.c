@@ -8,13 +8,17 @@ int main() {
     printf("Enter Number : ");
     scanf("%d", &n);
 
-    printf("Factorial : %d", factorial(n));
+    if (n >= 0) {
+        printf("Factorial : %d", factorial(n));
+    } else {
+        printf("Factorial can't be defined for negative numbers. !!!");
+    }
 
     return 0;
 }
 
 int factorial(int n) {
-    if (n == 1) {
+    if (n == 0) {
         return 1;
     }
 
