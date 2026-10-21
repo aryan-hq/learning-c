@@ -15,5 +15,6 @@ int main() {
         printf("%.2f\n", ptr[i]);
     }
 
+    free(ptr);
     return 0;
 }

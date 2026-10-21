@@ -1,5 +1,3 @@
-//not solved : to be solved
-
 #include <stdio.h>
 
 char highfreq(char str[], int n);
@@ -9,16 +7,27 @@ int main() {
     printf("Input : ");
     fgets(str, sizeof(str), stdin);
 
-    printf("The highest frequency character is : %d ", highfreq(str, 100));
+    printf("The highest frequency character is : %c ", highfreq(str, 100));
 
     return 0;
 }
 
 char highfreq(char str[], int n) {
-    char ch;
-    int max_count;
+    char max_ch = str[0];
+    int max_count = 0;
     for (int i = 0; str[i] != '\0'; i++) {
-        
+        if (str[i] != ' ') {
+            int count = 0;
+            for (int j = 0; str[j] != '\0'; j++) {
+                if (str[i] == str[j]) {
+                    count++;
+                }
+                if (count > max_count) {
+                    max_count = count;
+                    max_ch = str[i];
+                }
+            }
+        }
     }
-    return ch;
+    return max_ch;
 }
